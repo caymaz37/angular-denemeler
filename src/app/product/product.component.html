@@ -1,0 +1,13 @@
+<h2>Product List</h2>
+<div class="row">
+  <div class="card" *ngFor="let lis of lists" style="width: 18rem;">
+    <img [src]="lis.imgUrl" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ lis.productName }}</h5>
+      <p class="card-text">
+        {{ lis.productText }}
+      </p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
